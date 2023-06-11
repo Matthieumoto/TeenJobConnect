@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
 .banniere {
     position: fixed;
     top: 0;
@@ -21,7 +26,7 @@ body {
 
   .texte {
     color: white;
-    font-size: 30px;
+    font-size: 70px;
     line-height: 100px; /* Hauteur de la bannière */
   }
 
@@ -74,23 +79,30 @@ body {
     margin-top: 20px;
   }
 
+  .bande2texte{
+    position: absolute;
+    right: 300px;
+  }
+
   .bande3 {
     background-color: #ffffff; /* Couleur de la deuxième bande */
     line-height: 500px;
   }
 
-  .bande3 img{
-    float: right;
-    margin-right: 10px; /* Ajustez la valeur selon vos besoins */
-    border-radius: 20px; /* Ajustez la valeur pour définir le rayon de l'arrondi */
-    height: 400px;
-    width: 700px;
-    margin-top: 60px;
+  .bande3texte{
+    position: absolute;
+    font-size: 80px;
+    left: 30%;
   }
 
   .bande4 {
     background-color: #f3f3f3; /* Couleur de la deuxième bande */
     line-height: 500px;
+  }
+
+  .bande4texte{
+    position: absolute;
+    left: 45%;
   }
 
   .container {
