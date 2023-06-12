@@ -159,5 +159,46 @@ body {
   }  
 
   .container {
-    margin-top: 150px;
+    margin-top: 25%;
+    text-align: center;
+  }
+
+  .container1 {
+    margin-top: 8%;
+  }
+
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #F00;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: confetti 20s 1; /* Durée d'animation de 5 secondes */
+    transform: translateY(-100vh); /* Fait démarrer les confettis en dehors de l'écran en haut */
+    z-index: -1; /* Place les confettis en arrière-plan */
+  }
+
+  @keyframes confetti {
+    0% {
+      transform: translateY(-100vh); /* Fait démarrer les confettis en dehors de l'écran en haut */
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(300vh); /* Fait tomber les confettis jusqu'en bas de l'écran */
+      opacity: 1;
+    }
+  }
+
+  .taille {
+    font-size: 60px;
+  }
+
+  .deco{
+    float: right;
+    margin-right: 2%;
+  }
+
+  .deconexion {
+    color: #ffffff;
   }
