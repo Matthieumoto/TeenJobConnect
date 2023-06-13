@@ -52,7 +52,7 @@ body  {
 
 .animated-link span1 {
   display: inline-block;
-  background: #4d9cfe;
+  background: #0091ff;
   color: #000000;
   border: px solid #333;
   padding: 18px;
@@ -68,12 +68,12 @@ body  {
 .animated-link:hover span1 {
   transform: translate(-6px, -6px);
   color: #000;
-  background: #C8E6C9;
+  background: #ffaa00;
 }
 
 .animated-link span2 {
   display: inline-block;
-  background: #F9E79F;
+  background: #ffe600;
   color: #000000;
   border: px solid #333;
   padding: 18px;
@@ -89,12 +89,12 @@ body  {
 .animated-link:hover span2 {
   transform: translate(-6px, -6px);
   color: #000;
-  background: #c25fff;
+  background: #ff00ee;
 }
 
 .animated-link span3 {
   display: inline-block;
-  background: #82E0AA;
+  background: #00ff08;
   color: #000000;
   border: px solid #333;
   padding: 18px;
@@ -110,5 +110,5 @@ body  {
 .animated-link:hover span3 {
   transform: translate(-6px, -6px);
   color: #000;
-  background: #DCD0FF;
+  background: #ff0000;
 }
