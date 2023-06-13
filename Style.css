@@ -4,10 +4,28 @@ body  {
   font-family: sans-serif;
   
   background-color: #000000; /* Noir */
-  background-image: radial-gradient(at 20% 20%, #4a148c, #0c1445); /* Dégradé radial de violet à bleu foncé */
+  background-image: radial-gradient(at 20% 20%, #2300a4, #0c1445); /* Dégradé radial de violet à bleu foncé */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    height: 50px;
+  }
+
+  .item {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .colone {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
 }
 
 .top {
@@ -31,18 +49,6 @@ body  {
   flex-grow: 1;
 }
 
-@media screen and (max-width: 700px) {
-  .menu {
-    flex-direction: column;
-    height: 50px;
-  }
-
-  .item {
-    height: 50px;
-    margin-bottom: 20px;
-  }
-}
-
 .animated-link {
   display: inline-block;
   background: #000;
@@ -50,10 +56,10 @@ body  {
   text-decoration: none;
 }
 
-.animated-link span1 {
+.animated-link span {
   display: inline-block;
-  background: #0091ff;
-  color: #000000;
+  background: #3700ff;
+  color: #ffffff;
   border: px solid #333;
   padding: 18px;
   font-size: 20px;
@@ -64,51 +70,39 @@ body  {
   transform 0.15 ease-out,
   color 0.15 ease-out,
   background-color 0.15 ease-out;
-}
-.animated-link:hover span1 {
-  transform: translate(-6px, -6px);
-  color: #000;
-  background: #ffaa00;
 }
 
-.animated-link span2 {
-  display: inline-block;
-  background: #ffe600;
-  color: #000000;
-  border: px solid #333;
-  padding: 18px;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 3px;
-  cursor: pointer;
-  transition:
-  transform 0.15 ease-out,
-  color 0.15 ease-out,
-  background-color 0.15 ease-out;
-}
-.animated-link:hover span2 {
+.animated-link:hover span {
   transform: translate(-6px, -6px);
-  color: #000;
-  background: #ff00ee;
+  color: #ffffff;
+  background: #0800ff;
 }
 
-.animated-link span3 {
-  display: inline-block;
-  background: #00ff08;
-  color: #000000;
-  border: px solid #333;
-  padding: 18px;
+.colone {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.case {
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
-  border-radius: 3px;
-  cursor: pointer;
-  transition:
-  transform 0.15 ease-out,
-  color 0.15 ease-out,
-  background-color 0.15 ease-out;
-}
-.animated-link:hover span3 {
-  transform: translate(-6px, -6px);
-  color: #000;
-  background: #ff0000;
+  text-align: center;
+  display: block;
+  top: 50px; /* Position verticale à partir du haut de la fenêtre */
+  left: 50px; /* Position horizontale à partir de la gauche de la fenêtre */
+  width: 200px; /* Largeur de la case fixe */
+  height: auto; /* Hauteur de la case fixe */
+  background-color: #000000;
+  background-image: radial-gradient(at 20% 20%, #ff6f00, #ff0000); /* Couleur de fond de la case fixe */
+  border: 2px solid #ffffff; /* Bordure de la case fixe */
+  border-radius: 5px;
+  z-index: 9999; /* Indice de profondeur pour s'assurer que la case fixe est superposée au contenu de la page */
+  flex-grow: 1;
+  padding: 10px;
 }
