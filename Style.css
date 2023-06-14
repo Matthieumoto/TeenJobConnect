@@ -10,7 +10,7 @@ body  {
   background-size: cover;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .menu {
     flex-direction: column;
     height: 50px;
@@ -23,8 +23,12 @@ body  {
 
   .colone {
     flex-direction: column;
+    display: flex;    
     align-items: center;
-    margin-top: 150px;
+  }
+  
+  .case {
+    margin-top: 150px; /* Ajuster la valeur selon vos besoins */   
   }
 }
 
@@ -79,10 +83,8 @@ body  {
 }
 
 .colone {
-  margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 20px;
   gap: 50px;
   margin-left: 50px;
   margin-right: 50px;
@@ -93,16 +95,13 @@ body  {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  display: block;
-  top: 50px; /* Position verticale à partir du haut de la fenêtre */
-  left: 50px; /* Position horizontale à partir de la gauche de la fenêtre */
-  width: 200px; /* Largeur de la case fixe */
+  margin-left: 5px; /* Position horizontale à partir de la gauche de la fenêtre */
+  margin-right: 5px;
+  width: 100%; /* Largeur de la case fixe */
   height: auto; /* Hauteur de la case fixe */
   background-color: #000000;
   background-image: radial-gradient(at 20% 20%, #ff6f00, #ff0000); /* Couleur de fond de la case fixe */
   border: 2px solid #ffffff; /* Bordure de la case fixe */
   border-radius: 5px;
-  z-index: 9999; /* Indice de profondeur pour s'assurer que la case fixe est superposée au contenu de la page */
-  flex-grow: 1;
   padding: 10px;
 }
